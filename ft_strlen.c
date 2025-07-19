@@ -6,7 +6,7 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 00:24:12 by pabartoc          #+#    #+#             */
-/*   Updated: 2025/07/16 00:30:19 by pabartoc         ###   ########.fr       */
+/*   Updated: 2025/07/19 04:04:41 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,10 @@
 
 size_t	ft_strlen(const char *str)
 {
-	const char *str;
-	
+	size_t	i;
+
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }
