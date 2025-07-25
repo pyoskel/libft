@@ -6,7 +6,7 @@
 #    By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/08 22:11:45 by pabartoc          #+#    #+#              #
-#    Updated: 2025/07/23 23:29:05 by pabartoc         ###   ########.fr        #
+#    Updated: 2025/07/25 13:38:27 by pabartoc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,7 @@ SOURCE =	ft_isalnum.c \
 			ft_isprint.c \
 			ft_strlen.c \
 			ft_memset.c \
+			ft_memcpy.c \
 			ft_bzero.c
 
 OBJECTS = $(SOURCE:.c=.o)
