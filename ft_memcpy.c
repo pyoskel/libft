@@ -6,7 +6,7 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 05:47:49 by pabartoc          #+#    #+#             */
-/*   Updated: 2025/07/25 14:06:29 by pabartoc         ###   ########.fr       */
+/*   Updated: 2025/07/26 08:45:36 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,49 +31,49 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 // int	main(void)
 // {
-// 	char	str[] = "Du Opfer schläfst nicht";
+// 	char	str[] = "Guten Morgen Wie geht's?";
 // 	char	dest[100];
-// 	int		n = 18;
+// 	int		n = 12;
 
 // 	printf("%s\n", ft_memcpy(dest, str, n));
 // 	return (0);
 // }
 
-int	main(void)
-{
-	// === TEST 1: String-Kopie (Dein Anwendungsfall) ===
-	printf("--- Test 1: String-Kopie ---\n");
-	char	src_str[] = "Du Opfer schläfst nicht"; // Quelle
-	char	dest_ft[100]; // Ziel für deine Funktion
-	char	dest_orig[100]; // Ziel für die Original-Funktion
-	size_t n = 8;
+// 	// === === Main aus dem Netz === ===
+// int	main(void)
+// {
+// 	// === TEST 1: String-Kopie (Dein Anwendungsfall) ===
+// 	printf("--- Test 1: String-Kopie ---\n");
+// 	char	src_str[] = "Guten Morgen, Wie geht's?"; // Quelle
+// 	char	dest_ft[100]; // Ziel für deine Funktion
+// 	char	dest_orig[100]; // Ziel für die Original-Funktion
+// 	size_t n = 14;
 
-	// Test mit deiner Funktion
-	ft_memcpy(dest_ft, src_str, n);
-	dest_ft[n] = '\0'; // WICHTIG: Manuell Null-terminieren für printf!
+// 	// Test mit deiner Funktion
+// 	ft_memcpy(dest_ft, src_str, n);
+// 	dest_ft[n] = '\0'; // WICHTIG: Manuell Null-terminieren für printf!
 
-	// Test mit der echten C-Funktion
-	memcpy(dest_orig, src_str, n);
-	dest_orig[n] = '\0'; // Auch hier Null-terminieren
+// 	// Test mit der echten C-Funktion
+// 	memcpy(dest_orig, src_str, n);
+// 	dest_orig[n] = '\0'; // Auch hier Null-terminieren
 
-	printf("Original memcpy: \"%s\"\n", dest_orig);
-	printf("Deine ft_memcpy:   \"%s\"\n\n", dest_ft);
+	// printf("Original memcpy: \"%s\"\n", dest_orig);
+// 	printf("Deine ft_memcpy:   \"%s\"\n\n", dest_ft);
 
+// 	// === TEST 2: Integer-Array kopieren ===
+// 	printf("--- Test 2: Integer-Array ---\n");
+// 	int	src_int[] = {100, 200, -300, 400, 500};
+// 	int	dest_int[5];
+// 	size_t num_bytes = sizeof(src_int); // sizeof() berechnet die Größe in Bytes
 
-	// === TEST 2: Integer-Array kopieren ===
-	printf("--- Test 2: Integer-Array ---\n");
-	int	src_int[] = {100, 200, -300, 400, 500};
-	int	dest_int[5];
-	size_t num_bytes = sizeof(src_int); // sizeof() berechnet die Größe in Bytes
+// 	printf("Original-Array: {%d, %d, %d, %d, %d}\n",
+// 		src_int[0], src_int[1], src_int[2], src_int[3], src_int[4]);
 
-	printf("Original-Array: {%d, %d, %d, %d, %d}\n",
-		src_int[0], src_int[1], src_int[2], src_int[3], src_int[4]);
+// 	// Kopieren mit deiner Funktion
+// 	ft_memcpy(dest_int, src_int, num_bytes);
 
-	// Kopieren mit deiner Funktion
-	ft_memcpy(dest_int, src_int, num_bytes);
+// 	printf("Kopiertes Array: {%d, %d, %d, %d, %d}\n",
+// 		dest_int[0], dest_int[1], dest_int[2], dest_int[3], dest_int[4]);
 
-	printf("Kopiertes Array: {%d, %d, %d, %d, %d}\n",
-		dest_int[0], dest_int[1], dest_int[2], dest_int[3], dest_int[4]);
-
-	return (0);
-}
+// 	return (0);
+// }
