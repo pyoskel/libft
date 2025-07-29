@@ -6,7 +6,7 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 05:47:49 by pabartoc          #+#    #+#             */
-/*   Updated: 2025/07/26 08:45:36 by pabartoc         ###   ########.fr       */
+/*   Updated: 2025/07/29 18:52:59 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char	*dst_ptr;
-	unsigned char	*src_ptr;
+	unsigned char		*dst_ptr;
+	const unsigned char	*src_ptr;
 
 	if (!dst && !src)
 		return (dst);
 	dst_ptr = (unsigned char *) dst;
-	src_ptr = (unsigned char *) src;
+	src_ptr = (const unsigned char *) src;
 	while (n > 0)
 	{
 		*dst_ptr++ = *src_ptr++;
@@ -29,6 +29,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	return (dst);
 }
 
+// === eigene Main Funktion ===
 // int	main(void)
 // {
 // 	char	str[] = "Guten Morgen Wie geht's?";
