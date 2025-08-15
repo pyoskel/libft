@@ -6,7 +6,7 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 04:19:33 by pabartoc          #+#    #+#             */
-/*   Updated: 2025/07/23 05:20:59 by pabartoc         ###   ########.fr       */
+/*   Updated: 2025/08/15 18:47:47 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	ptr = (unsigned char *) b;
 	while (len > 0)
 	{
-		*ptr = (unsigned char)c;
+		*ptr = (unsigned char) c;
 		ptr++;
 		len--;
 	}
