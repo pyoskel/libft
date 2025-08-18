@@ -6,7 +6,7 @@
 #    By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/08 22:11:45 by pabartoc          #+#    #+#              #
-#    Updated: 2025/07/26 12:03:09 by pabartoc         ###   ########.fr        #
+#    Updated: 2025/08/18 07:19:48 by pabartoc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,11 +19,14 @@ SOURCE =	ft_isalnum.c \
 			ft_isdigit.c \
 			ft_isascii.c \
 			ft_isprint.c \
+			ft_strlcpy.c \
 			ft_strlen.c \
 			ft_memset.c \
 			ft_memcpy.c \
 			ft_memmove.c \
-			ft_bzero.c
+			ft_bzero.c \
+			ft_tolower.c \
+			ft_toupper.c
 
 OBJECTS = $(SOURCE:.c=.o)
 
