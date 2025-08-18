@@ -6,7 +6,7 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 05:47:49 by pabartoc          #+#    #+#             */
-/*   Updated: 2025/07/29 18:52:59 by pabartoc         ###   ########.fr       */
+/*   Updated: 2025/08/18 06:32:50 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,16 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 }
 
 // === eigene Main Funktion ===
-// int	main(void)
+// int main(void)
 // {
-// 	char	str[] = "Guten Morgen Wie geht's?";
-// 	char	dest[100];
-// 	int		n = 12;
+//     char    str[] = "Guten Morgen Wie geht's?";
+//     char    dest[100];
+//     int     n = 12;
+//     char    *result; // Eine Variable für das Ergebnis
 
-// 	printf("%s\n", ft_memcpy(dest, str, n));
-// 	return (0);
+//     result = (char *)ft_memcpy(dest, str, n);
+//     printf("%s\n", result);
+//     return (0);
 // }
 
 // 	// === === Main aus dem Netz === ===
