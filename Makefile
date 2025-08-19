@@ -6,7 +6,7 @@
 #    By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/08 22:11:45 by pabartoc          #+#    #+#              #
-#    Updated: 2025/08/18 07:19:48 by pabartoc         ###   ########.fr        #
+#    Updated: 2025/08/19 23:46:33 by pabartoc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ SOURCE =	ft_isalnum.c \
 			ft_isdigit.c \
 			ft_isascii.c \
 			ft_isprint.c \
+			ft_strlcat.c \
 			ft_strlcpy.c \
 			ft_strlen.c \
 			ft_memset.c \
