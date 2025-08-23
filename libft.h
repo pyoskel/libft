@@ -6,7 +6,7 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 00:59:20 by pabartoc          #+#    #+#             */
-/*   Updated: 2025/08/19 23:46:13 by pabartoc         ###   ########.fr       */
+/*   Updated: 2025/08/21 05:35:35 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,19 +18,21 @@
 # include <stdlib.h>
 # include <string.h>
 
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
+void	ft_bzero(void *s, size_t n);
 int		ft_isalnum(int c);
+int		ft_isalpha(int c);
 int		ft_isascii(int c);
+int		ft_isdigit(int c);
 int		ft_isprint(int c);
-int		ft_tolower(int c);
-int		ft_toupper(int c);
+void	*ft_memcpy(void *dst, const void *src, size_t n);
+void	*ft_memmove(void *dst, const void *src, size_t len);
+void	*ft_memset(void *b, int c, size_t len);
+char	*ft_strchr(const char *s, int c);
 size_t	ft_strlcat(char *dest, const char *src, size_t dest_size);
 size_t	ft_strlcpy(char *dest, const char *src, size_t dest_size);
 size_t	ft_strlen(const char *str);
-void	*ft_memset(void *b, int c, size_t len);
-void	*ft_memcpy(void *dst, const void *src, size_t n);
-void	*ft_memmove(void *dst, const void *src, size_t len);
-void	ft_bzero(void *s, size_t n);
+char	*ft_strrchr(const char *s, int c);
+int		ft_tolower(int c);
+int		ft_toupper(int c);
 
 #endif

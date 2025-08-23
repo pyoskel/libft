@@ -6,7 +6,7 @@
 #    By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/08 22:11:45 by pabartoc          #+#    #+#              #
-#    Updated: 2025/08/19 23:46:33 by pabartoc         ###   ########.fr        #
+#    Updated: 2025/08/21 05:38:17 by pabartoc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,18 +14,20 @@ CC  = cc
 NAME = libft.a
 CFLAGS = -Wall -Werror -Wextra
 
-SOURCE =	ft_isalnum.c \
+SOURCE =	ft_bzero.c \
+			ft_isalnum.c \
 			ft_isalpha.c \
-			ft_isdigit.c \
 			ft_isascii.c \
+			ft_isdigit.c \
 			ft_isprint.c \
+			ft_memcpy.c \
+			ft_memmove.c \
+			ft_memset.c \
+			ft_strchr.c \
 			ft_strlcat.c \
 			ft_strlcpy.c \
 			ft_strlen.c \
-			ft_memset.c \
-			ft_memcpy.c \
-			ft_memmove.c \
-			ft_bzero.c \
+			ft_strrchr.c \
 			ft_tolower.c \
 			ft_toupper.c
 
