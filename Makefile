@@ -6,7 +6,7 @@
 #    By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/08 22:11:45 by pabartoc          #+#    #+#              #
-#    Updated: 2025/08/26 06:10:57 by pabartoc         ###   ########.fr        #
+#    Updated: 2025/08/26 06:41:05 by pabartoc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ SOURCE =	ft_bzero.c \
 			ft_isascii.c \
 			ft_isdigit.c \
 			ft_isprint.c \
+			ft_memchr.c \
 			ft_memcmp.c \
 			ft_memcpy.c \
 			ft_memmove.c \
