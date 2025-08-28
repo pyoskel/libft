@@ -6,7 +6,7 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 00:59:20 by pabartoc          #+#    #+#             */
-/*   Updated: 2025/08/27 07:37:58 by pabartoc         ###   ########.fr       */
+/*   Updated: 2025/08/28 05:52:41 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,17 @@ void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s1);
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlcat(char *dest, const char *src, size_t dest_size);
 size_t	ft_strlcpy(char *dest, const char *src, size_t dest_size);
 size_t	ft_strlen(const char *str);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strrchr(const char *s, int c);
+char	*ft_strtrim(char const *s1, char const *set);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 

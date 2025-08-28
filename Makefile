@@ -6,7 +6,7 @@
 #    By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/08 22:11:45 by pabartoc          #+#    #+#              #
-#    Updated: 2025/08/27 07:38:12 by pabartoc         ###   ########.fr        #
+#    Updated: 2025/08/28 05:53:08 by pabartoc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,12 +33,17 @@ SOURCE =	ft_atoi.c \
 			ft_putstr_fd.c \
 			ft_strchr.c \
 			ft_strdup.c \
+			ft_striteri.c \
+			ft_strjoin.c \
 			ft_strlcat.c \
 			ft_strlcpy.c \
 			ft_strlen.c \
+			ft_strmapi.c \
 			ft_strncmp.c \
 			ft_strnstr.c \
 			ft_strrchr.c \
+			ft_strtrim.c \
+			ft_substr.c \
 			ft_tolower.c \
 			ft_toupper.c
 
