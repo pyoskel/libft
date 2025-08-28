@@ -6,7 +6,7 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 05:51:43 by pabartoc          #+#    #+#             */
-/*   Updated: 2025/08/28 09:49:51 by pabartoc         ###   ########.fr       */
+/*   Updated: 2025/08/28 09:53:40 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*result;
-	size_t	start;
 	size_t	end;
+	size_t	start;
 	size_t	i;
 
 	if (!s1 || !set)
