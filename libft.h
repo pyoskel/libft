@@ -6,18 +6,18 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 00:59:20 by pabartoc          #+#    #+#             */
-/*   Updated: 2025/08/29 19:32:45 by pabartoc         ###   ########.fr       */
+/*   Updated: 2025/10/10 21:17:36 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stdlib.h>
 # include <unistd.h>
 # include <stdio.h>
-# include <stdlib.h>
-# include <string.h>
 # include <limits.h>
+// # include <string.h> //spaeter loeschen
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
