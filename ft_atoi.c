@@ -6,7 +6,7 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 03:05:50 by pabartoc          #+#    #+#             */
-/*   Updated: 2025/08/27 04:55:25 by pabartoc         ###   ########.fr       */
+/*   Updated: 2026/01/23 19:11:11 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,13 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
+
+// int main(void)
+// {
+// 	const char	*num_str = "50";
+// 	int			num;
+
+// 	num = ft_atoi(num_str);
+// 	printf("Die konvertierte Zahl ist: %d\n", num);
+// 	return (0);
+// }
