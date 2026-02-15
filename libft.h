@@ -6,18 +6,18 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 00:59:20 by pabartoc          #+#    #+#             */
-/*   Updated: 2025/10/10 21:17:36 by pabartoc         ###   ########.fr       */
+/*   Updated: 2026/02/15 06:00:08 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdlib.h>
-# include <unistd.h>
-# include <stdio.h>
-# include <limits.h>
-// # include <string.h> //spaeter loeschen
+# include <stdlib.h>  // malloc, free, NULL, size_t (für Speicherreservierung)
+# include <unistd.h>  // write (für die ft_put..._fd Funktionen)
+# include <limits.h>  // INT_MIN, INT_MAX (für ft_atoi und ft_putnbr_fd)
+// # include <stdio.h>  // printf (nur zum Debuggen/Testen in der main)
+// # include <string.h> // memcpy, (NULL, size_t (Standard-String-Funktionen))
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
