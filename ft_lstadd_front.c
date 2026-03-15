@@ -6,7 +6,7 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 21:00:57 by pabartoc          #+#    #+#             */
-/*   Updated: 2025/10/10 21:09:10 by pabartoc         ###   ########.fr       */
+/*   Updated: 2026/03/08 22:45:24 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-
+	new->next = *lst;
 }
