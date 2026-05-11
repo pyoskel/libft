@@ -6,7 +6,7 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 01:36:07 by pabartoc          #+#    #+#             */
-/*   Updated: 2025/08/26 06:14:09 by pabartoc         ###   ########.fr       */
+/*   Updated: 2026/03/28 12:11:55 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,12 @@ char	*ft_strrchr(const char *s, int c)
 	if ((unsigned char) s[i] == (unsigned char) c)
 		return ((char *) &s[i]);
 	return (str);
+} 
+
+#include <stdio.h>
+
+int main(void)
+{
+	printf("%s", ft_strrchr("hellowhatwsup", 119));
+	return (0);
 }
