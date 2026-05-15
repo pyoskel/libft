@@ -6,7 +6,7 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 22:14:46 by pabartoc          #+#    #+#             */
-/*   Updated: 2025/08/29 21:32:22 by pabartoc         ###   ########.fr       */
+/*   Updated: 2025/08/30 17:06:31 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static size_t	count_words(char const *str, char c)
 	return (counter);
 }
 
-static void	*let_split_free(char **array, int w)
+static void	*let_split_free(char **array, size_t w)
 {
 	while (w > 0)
 	{
@@ -41,9 +41,9 @@ static void	*let_split_free(char **array, int w)
 
 static char	**copy_word(char **array, char const *s, char c)
 {
-	int		i;
-	int		len;
-	int		w;
+	size_t	i;
+	size_t	len;
+	size_t	w;
 
 	i = 0;
 	len = 0;
