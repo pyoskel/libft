@@ -6,7 +6,7 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 09:09:14 by pabartoc          #+#    #+#             */
-/*   Updated: 2025/07/29 20:31:49 by pabartoc         ###   ########.fr       */
+/*   Updated: 2026/05/24 04:16:35 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,22 +16,21 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char		*dst_ptr;
 	const unsigned char	*src_ptr;
-	size_t				i;
 
 	if (!dst && !src)
 		return (NULL);
 	dst_ptr = (unsigned char *) dst;
 	src_ptr = (const unsigned char *) src;
-	i = 0;
-	if (dst_ptr > src_ptr)
+	
+	if ((size_t)dst < (size_t)src)
 	{
-		while (len-- > 0)
-			dst_ptr[len] = src_ptr[len];
+		while (len--)
+			*dst_ptr++ = *src_ptr++;
 	}
-	else
+	else if ((size_t)dst > (size_t)src)
 	{
-		while (i++ < len)
-			dst_ptr[i - 1] = src_ptr[i - 1];
+		while (len--)
+			dst_ptr[len] = src_ptr[len];
 	}
 	return (dst);
 }
