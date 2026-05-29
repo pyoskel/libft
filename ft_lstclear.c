@@ -6,7 +6,7 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 21:06:02 by pabartoc          #+#    #+#             */
-/*   Updated: 2026/05/23 12:07:39 by pabartoc         ###   ########.fr       */
+/*   Updated: 2026/05/29 14:56:22 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*tmp;
-	
+
 	if (!lst || !del)
 		return ;
 	while (*lst)
@@ -35,26 +35,30 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 // {
 // 	t_list	*tmp;
 
-// 	// Sicherheitsabfrage: Wenn der Doppelzeiger oder die Löschfunktion nicht existieren, abbrechen
+// 	// Sicherheitsabfrage: Wenn der Doppelzeiger oder
+//  // die Löschfunktion nicht existieren, abbrechen
 // 	if (!lst || !del)
 // 		return ;
 
 // 	// Solange der Zeiger auf das aktuelle Element nicht NULL ist
 // 	while (*lst)
 // 	{
-// 		// 1. Die Adresse des nächsten Elements retten, bevor wir das aktuelle löschen
+// 		// 1. Die Adresse des nächsten Elements retten,
+//      // bevor wir das aktuelle löschen
 // 		tmp = (*lst)->next;
-		
-// 		// 2. Den Inhalt des aktuellen Elements mit der übergebenen Funktion freigeben
+
+// 		// 2. Den Inhalt des aktuellen Elements mit
+// 		// der übergebenen Funktion freigeben
 // 		del((*lst)->content);
-		
-// 		// 3. Den Speicherplatz des aktuellen Elements (Knotens) selbst freigeben
+
+// 		// 3. Den Speicherplatz des aktuellen Elements
+//     // (Knotens) selbst freigeben
 // 		free(*lst);
-		
+
 // 		// 4. Den Originalzeiger auf das gerettete, nächste Element verschieben
 // 		*lst = tmp;
 // 	}
-	
+
 // 	// Nach der Schleife ist *lst automatisch NULL. 
 // 	// Der Originalzeiger aus dem Hauptprogramm zeigt nun also sicher auf NULL.
 // }
@@ -118,16 +122,17 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 //     printf("mylist zeigt auf die Adresse: %p\n\n", (void*)mylist);
 
 //     printf("Starte ft_lstclear...\n");
-    
+
 //     // Wir rufen die Funktion auf. 
-//     // Wichtig: &mylist (Adresse des Zeigers) und del_content (unsere Funktion)
+//     // Wichtig: &mylist (Adresse des Zeigers)
+//     // und del_content (unsere Funktion)
 //     ft_lstclear(&mylist, del_content);
 
 //     printf("\nNach dem Loeschen:\n");
-    
+
 //     // Wenn alles richtig war, ist mylist jetzt NULL
 //     if (mylist == NULL)
-//         printf("Erfolg! mylist ist jetzt NULL. Es gibt keine Memory Leaks.\n");
+//         printf("Erfolg! mylist ist nun NULL. Es gibt keine Memory Leaks.\n");
 //     else
 //         printf("Fehler: mylist ist nicht NULL!\n");
 

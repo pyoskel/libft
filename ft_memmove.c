@@ -6,7 +6,7 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 09:09:14 by pabartoc          #+#    #+#             */
-/*   Updated: 2026/05/27 08:00:13 by pabartoc         ###   ########.fr       */
+/*   Updated: 2026/05/28 19:54:04 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		return (NULL);
 	dst_ptr = (unsigned char *) dst;
 	src_ptr = (const unsigned char *) src;
-	
 	if ((size_t)dst < (size_t)src)
 	{
 		while (len--)
@@ -47,19 +46,19 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 // int main(void)
 // {
 //     char buffer[] = "42Heilbronn";
-    
+
 //     printf("Vorher:  %s\n", buffer);
-    
+
 //     // Wir wollen "42" nehmen und es um 2 Stellen nach rechts verschieben,
 //     // genau dorthin, wo aktuell "He" steht.
 //     // src = buffer (zeigt auf die '4')
 //     // dst = buffer + 2 (zeigt auf das 'H')
 //     // len = 2 Bytes (Wir kopieren 2 Zeichen)
-    
+
 //     memmove(buffer + 2, buffer, 2);
-    
+
 //     printf("Nachher: %s\n", buffer); 
 //     // Output: 4242lbronn
-    
+
 //     return (0);
 // }

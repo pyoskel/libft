@@ -6,7 +6,7 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 01:36:07 by pabartoc          #+#    #+#             */
-/*   Updated: 2026/05/28 19:10:15 by pabartoc         ###   ########.fr       */
+/*   Updated: 2026/05/29 15:08:05 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strrchr(const char *s, int c)
 	if ((unsigned char)s[i] == (unsigned char)c)
 		return ((char *)(s + i));
 	return (str);
-} 
+}
 
 // #include <stdio.h>
 

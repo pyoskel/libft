@@ -6,7 +6,7 @@
 /*   By: pabartoc <pabartoc@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 21:05:25 by pabartoc          #+#    #+#             */
-/*   Updated: 2026/05/24 03:17:57 by pabartoc         ###   ########.fr       */
+/*   Updated: 2026/05/29 14:57:46 by pabartoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,10 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 // 	// Wenn es den Knoten oder die Löschfunktion nicht gibt, mach nichts
 // 	if (!lst || !del)
 // 		return ;
-	
+
 // 	// 1. Lösche den Inhalt des Knotens
 // 	del(lst->content);
-	
+
 // 	// 2. Lösche die Hülle (den Knoten selbst)
 // 	free(lst);
 // }
@@ -55,14 +55,14 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 //     node1->next = node2;
 //     node2->next = node3;
 //     node3->next = NULL;
-    
+
 //     t_list *mylist = node1;
 
 //     // -------------------------------------------------------------
 //     // SCHRITT 1: Element 1 isolieren und löschen
 //     // -------------------------------------------------------------
 //     printf("--- LOESCHE ELEMENT 1 ---\n");
-    
+
 //     mylist = node1->next; // mylist auf node2 schieben
 //     ft_lstdelone(node1, del_content);
 
@@ -70,7 +70,7 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 //     // SCHRITT 2: Den Rest der Liste manuell in einer Schleife löschen
 //     // -------------------------------------------------------------
 //     printf("\n--- LOESCHE DEN REST DER LISTE ---\n");
-    
+
 //     t_list *tmp; // Hilfsvariable zum Retten der Zeiger
 
 //     // Solange mylist nicht NULL ist (wir also noch Knoten haben)
@@ -78,10 +78,10 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 //     {
 //         // 1. Adresse des nächsten Knotens retten!
 //         tmp = mylist->next;
-        
+
 //         // 2. Den aktuellen Knoten gefahrlos löschen
 //         ft_lstdelone(mylist, del_content);
-        
+
 //         // 3. Unseren Hauptzeiger auf den geretteten, nächsten Knoten setzen
 //         mylist = tmp;
 //     }
